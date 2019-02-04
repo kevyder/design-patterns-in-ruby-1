@@ -5,9 +5,11 @@
 Queremos que un objeto converse con otro, pero sus interfaces no son compatibles.
 
 ## Solución
+
 Simplemente contenemos la **adaptación** con nuestra nueva clase **adaptadora**. Esta clase implementa una interfaz que el invocador entiende, aunque todo el trabajo sea realizado por el objeto adaptado.
 
 ## Ejemplo
+
 Pensemos en una clase que recibe dos archivos (un lector y un escritor) y encripta un archivo.
 
 ```ruby
@@ -27,6 +29,7 @@ class Encrypter
   end
 end
 ```
+
 Pero ¿que ocurre si la información segura que queremos pasa a ser un string, en lugar de un archivo? Necesitamos un objeto que parezca un archivo, es decir, que soporte la misma interfaz que el objeto `IO` de Ruby. Para lograr esto podemos crear una clase adaptadora `StringIOAdapter`:
 
 ```ruby
