@@ -58,7 +58,7 @@ end
 save_button = SlickButton.new(SaveCommand.new)
 ```
 
-El patrón de Comando es bastante útil si necesitamos implementar la función de **deshacer**. Todo lo que necesitamos hacer es implementar el método `unexecute` en nuestro objeto de comando. Por ejemplo, así es como implementaríamos la creación de un archivo:
+El patrón Command es bastante útil si necesitamos implementar la función de **deshacer**. Todo lo que necesitamos hacer es implementar el método `unexecute` en nuestro objeto de comando. Por ejemplo, así es como implementaríamos la creación de un archivo:
 
 ```ruby
 class CreateFile < Command
@@ -80,7 +80,7 @@ class CreateFile < Command
 end
 ```
 
-Otra situación en la que el patrón de comando es realmente útil es en los programas de instalación. Combinándolo con el patrón **composite**, podemos almacenar una lista de tareas a realizar:
+Otra situación en la que el patrón Command es realmente útil es en los programas de instalación. Combinándolo con el patrón **composite**, podemos almacenar una lista de tareas a realizar:
 
 ```ruby
 class CompositeCommand < Command

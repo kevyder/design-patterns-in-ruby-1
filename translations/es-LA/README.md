@@ -33,7 +33,7 @@ explica y adapta a Ruby 14 de los 23 patrones de diseño originales de GoF (Gang
 
 * Encontrar errores de escritura y gramática
 * Proponer una mejor manera de explicar alguno de los estándares
-*  Añadir ejemplos más claros del un uso de patrón
+* Añadir ejemplos más claros del uso de un patrón
 * Agregar patrones GoF que no estén cubiertos en el libro
 
 Pull Requests de **refactorización de los ejemplos de código no serán considerados**. Los ejemplos proporcionados por Russ Olsen en su libro son simples y autoexplicativos, no buscan tener el mejor rendimiento ni el ser los más elegantes, su propósito es meramente educativo.
